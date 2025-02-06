@@ -12,7 +12,7 @@ app.use(cookieParser());
 
 // Correct CORS Setup: Allow credentials and specify origin
 app.use(cors({
-  origin: 'http://localhost:3000',  // Allow React app origin
+  origin: '*',  // Allow React app origin
   credentials: true,                // Allow cookies/auth headers
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',  // Ensure the proper HTTP methods
 }));
