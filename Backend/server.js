@@ -12,7 +12,7 @@ app.use(cookieParser());
 
 // Correct CORS Setup: Allow credentials and specify origin
 app.use(cors({
-  origin: 'https://moonshot-data-frontend.onrender.com',  // Allow React app origin
+  origin: '*',  // Allow React app origin
   credentials: true,                // Allow cookies/auth headers
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',  // Ensure the proper HTTP methods
 }));
